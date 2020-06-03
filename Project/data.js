@@ -407,7 +407,7 @@ let a = [
     },
     {
         Id: 30,
-        Name: ":Adaline Hotel and Apartment",
+        Name: "Adaline Hotel and Apartment",
         Address: "580 Vo Nguyen Giap, Hòa Hải, Đà Nẵng, Việt Nam",
         Province: "Đà Nẵng",
         District: "Hòa Hải",
@@ -709,9 +709,10 @@ function search(){
         result = a.filter(function(value){
             return value.Province.toLocaleLowerCase().includes(sName.trim().toLocaleLowerCase());
         })
+        localStorage.setItem(`hotel`, JSON.stringify(result));
+        window.location.href = "ketqua.html"; 
     }
-    localStorage.setItem(`hotel`, JSON.stringify(result));
-    window.location.href = "ketqua.html"; 
+    
 }
 function showHotel(){
     let result = [];

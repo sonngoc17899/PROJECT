@@ -1,6 +1,10 @@
 body{
     background-image: url(image/slider-bg.jpg);
 }
+h3, h5{
+  text-align: center;  
+  text-transform: none;
+}
 .container{
     /* background-image: url(image/slider-bg.jpg); */
     /* border: 1px solid black; */
