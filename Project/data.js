@@ -571,7 +571,7 @@ let a = [
         `https://pix6.agoda.net/hotelImages/9807419/-1/b33602269459ef531b6e808a888f35fb.jpg?s=1024x768`,
         `https://pix6.agoda.net/hotelImages/9807419/-1/b82c8674ab0697224b700c598cac3a3c.jpg?s=1024x768`],
         Description: "Có quán bar, có bể bơi ngoài trời",
-        Price: "16e5",
+        Price: 16e5,
     },
     {
         Id: 42,
@@ -707,10 +707,9 @@ function search(){
     let result = [];
     if(sName.trim()!=="" && startDay.trim()!=="" && endDate.trim()!==""){
         result = a.filter(function(value){
-            return value.Province.toLocaleLowerCase().includes(sName.trim().toLocaleLowerCase());
+            return value.Province.toLocaleLowerCase().includes(sName.trim().toLocaleLowerCase()) || value.District.toLocaleLowerCase().includes(sName.trim().toLocaleLowerCase());
         })
         localStorage.setItem(`hotel`, JSON.stringify(result));
         window.location.href = "ketqua.html"; 
-    }
-    
+    }  
 }
