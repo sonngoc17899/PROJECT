@@ -714,12 +714,3 @@ function search(){
     }
     
 }
-function showHotel(){
-    let result = [];
-    result.push(a[1].Img);
-    result.push(a[15].Img);
-    result.push(a[22].Img);
-    result.push(a[35].Img);
-    result.push(a[42].Img);
-}
-showHotel();

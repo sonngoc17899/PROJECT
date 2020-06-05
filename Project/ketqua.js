@@ -33,3 +33,33 @@ function sortPriceUp(){
 function showDetail(id){
     window.location.href = "info.html";
 }
+function Address(){
+    let address = document.getElementById("address");
+    let html = `
+    <button class="dropdown-item" onclick="id1();" type="button">${hotel[0].District}</button>
+    <button class="dropdown-item" onclick="id2();" type="button">${hotel[5].District}</button>
+    <button class="dropdown-item" onclick="id3();" type="button">${hotel[8].District}</button>
+    `
+    address.innerHTML = html;
+}
+Address();
+function id1(){
+    let id = hotel.filter(function(value){
+        return value.District === hotel[0].District;
+    })
+    show(id);
+}
+function id2(){
+    let id = hotel.filter(function(value){
+        return value.District === hotel[5].District;
+    })
+    show(id)
+}
+function id3(){
+    let id = hotel.filter(function(value){
+        return value.District === hotel[8].District;
+    })
+    show(id);
+}
+
+

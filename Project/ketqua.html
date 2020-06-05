@@ -11,11 +11,11 @@
 <body>
     <div class="container">
         <div class="content-header">
-            <div class="header-logo">
-                <img src=".." alt="logo">
-            </div>
             <div class="header-menu">
                 <ul class="navigation">
+                    <li>
+                        <a href="home.html"><img src="image/logo.png" alt="logo" width="100px" height="80px"></a>
+                    </li>
                     <li class="active">
                         <a href="home.html">Home</a>
                     </li>
@@ -30,9 +30,23 @@
     <div class="sort">
         <ul>
             <li><h3>Lọc khách sạn theo</h3></li>
-            <li><button onclick="sortPriceDow()">Giá giảm dần</button></li>
-            <li><button onclick="sortPriceUp()">Giá tăng dần</button></li>
-            <li><button onclick="star()">Sao</button></li>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Giá
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" onclick="sortPriceDow();" type="button">Giảm dần</button>
+                    <button class="dropdown-item" onclick="sortPriceUp();" type="button">Tăng dần</button>
+                </div>
+              </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Vị Trí
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2" id="address">
+                    
+                </div>
+              </div>
         </ul>
     </div>
     <table class="table-bordered">
@@ -40,5 +54,8 @@
         </tbody>
     </table>
     <script src="ketqua.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
