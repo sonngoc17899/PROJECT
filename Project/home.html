@@ -6,15 +6,17 @@
     <title>Home</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 </head>
 <body>
+    
       <div class="container">
         <div class="content-header">
-            <div class="header-logo">
-                <img src=".." alt="logo">
-            </div>
             <div class="header-menu">
                 <ul class="navigation">
+                    <li>
+                        <a href="home.html"><img src="image/logo.png" alt="logo" width="100px" height="80px"></a>
+                    </li>
                     <li class="active">
                         <a href="home.html">Home</a>
                     </li>
@@ -27,32 +29,40 @@
             
             </div>
           </div>
+          <div class="content"></div>
+          <div class="text">
+              <div class="text1">
+                <h3 style="color:black">Tìm kiếm khách sạn, khu nghỉ dưỡng và hơn thế nữa...</3>
+                <h6>Từ những khu nghỉ dưỡng thanh bình đến những căn hộ hạng sang hiện đại</h6>
+            </div>
             <div class="content-body">
-                <div class="search-place">
-                        <div class="container-1">
-                            <span class="icon"><i class="fa fa-search"></i></span>
-                            <input type="search" id="search-place" placeholder="Search" />
-                        </div>
-                </div>
-                <div class="input-day">
+                <div class="row mb-3">
                     <ul>
                         <li>
-                            <div class="search-begin-day">
-                                <div class="container-2">
-                                    <span class="icon2"><i class="fa fa-search"></i></span>
-                                    <input type="text" id="search-begin-day" placeholder="begin day" />
+                            <form class="col-15">
+                                <div class="form-group">
+                                    <label for="search-product-name"></label>
+                                    <input type="text" id="search-place" class="form-control" placeholder="Bạn muốn đến đâu">
                                 </div>
-                            </div>
+                            </form>
                         </li>
                         <li>
-                            <div class="search-end-day">
-                                <div class="container-3">
-                                    <span class="icon2"><i class="fa fa-search"></i></span>
-                                    <input type="text" id="search-end-day" placeholder="end day"/>
+                            <form class="col-15" action="action_page.php">
+                                <div class="form-group">
+                                    <label for="search-product-name"></label>
+                                    <input id="search-begin-day" type="datetime-local" name="bdaytime" class="form-control" placeholder="Ngày đến">
                                 </div>
-                            </div>
+                            </form>
                         </li>
-                    </ul>
+                        <li>
+                            <form class="col-15" action="action_page.php">
+                                <div class="form-group">
+                                    <label for="search-product-name"></label>
+                                    <input type="datetime-local" id="search-end-day" name="bdaytime" class="form-control" placeholder="Ngày đi">
+                                </div>
+                            </form>
+                        </li>
+                    </ul>   
                 </div>
                 <div>
                     <ul class="nav nav-pills">
@@ -68,10 +78,14 @@
                           </div>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-link active" onclick="search(event);">Tìm</button>
+                            <button class="search" onclick="search(event);" >
+                           <span>Tìm khách sạn</span>
+                        </button>
                           </li>
                       </ul>
                 </div>
+            </div>
+            </div>
                 <!-- <div class="toolbar">
                     <ul>
                         <li>
@@ -93,7 +107,6 @@
                         </li>
                     </ul>
                 </div> -->
-            </div>
             <h3>Điểm đến phổ biến nhất</h3>
             <div class="row">
                 <div class="column">
@@ -101,7 +114,7 @@
                      <div>
                         <img src="image/canh-dep-ha-long-viet-nam_055419665.jpg" alt="vinh ha long" alt="Snow" style="width:100%" height="150px">
                      </div>   
-                    <span><h5 style="color: white;">Quảng Ninh</h5></span>
+                    <span><h5 style="color: black;">Quảng Ninh</h5></span>
                 </a>  
                 </div>
                 <div class="column">
@@ -109,7 +122,7 @@
                      <div>
                         <img src="image/Hà-Nội.jpg" alt="vinh ha long" alt="Snow" style="width:100%" height="150px">
                      </div>   
-                    <span><h5 style="color: white;">Hà Nội</h5></span>
+                    <span><h5 style="color: black;">Hà Nội</h5></span>
                 </a>  
                 </div>
                 <div class="column">
@@ -117,7 +130,7 @@
                      <div>
                         <img src="image/Đà-Nẵng.jpg" alt="vinh ha long" alt="Snow" style="width:100%" height="150px">
                      </div>   
-                    <span><h5 style="color: white;">Đà Nẵng</h5></span>
+                    <span><h5 style="color: black;">Đà Nẵng</h5></span>
                 </a>  
                 </div>
                 <div class="column">
@@ -125,7 +138,7 @@
                      <div>
                         <img src="image/Nha-Trang.jpg" alt="vinh ha long" alt="Snow" style="width:100%" height="150px">
                      </div>   
-                    <span><h5 style="color: white;">Nha Trang</h5></span>
+                    <span><h5 style="color: black;">Nha Trang</h5></span>
                 </a>  
                 </div>
                 <div class="column">
@@ -133,7 +146,7 @@
                      <div>
                         <img src="image/Hồ-Chí-Minh.jpg" alt="vinh ha long" alt="Snow" style="width:100%" height="150px">
                      </div>   
-                    <span><h5 style="color: white;">Thành Phố Hồ Chí Minh</h5></span>
+                    <span><h5 style="color: black;">Thành Phố Hồ Chí Minh</h5></span>
                 </a>  
                 </div>
             </div>
