@@ -704,11 +704,16 @@ function search(){
     let sName = document.getElementById(`search-place`).value;
     let startDay = document.getElementById(`search-end-day`).value;
     let endDate = document.getElementById(`search-begin-day`).value;
+    // let people = document.getElementById(`people`).value;
     let result = [];
     if(sName.trim()!=="" && startDay.trim()!=="" && endDate.trim()!==""){
         result = a.filter(function(value){
             return value.Province.toLocaleLowerCase().includes(sName.trim().toLocaleLowerCase()) || value.District.toLocaleLowerCase().includes(sName.trim().toLocaleLowerCase());
-        })
+        });
+        // localStorage.setItem(`people`, people);
+        localStorage.setItem(`name`, sName);
+        localStorage.setItem(`startDay`, startDay);
+        localStorage.setItem(`endDate`, endDate);
         localStorage.setItem(`hotel`, JSON.stringify(result));
         window.location.href = "ketqua.html"; 
     }  
