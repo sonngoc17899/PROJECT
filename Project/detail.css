@@ -7,7 +7,7 @@ body{
 }
 
 .content-body {
-    
+    text-align: center;
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -20,7 +20,14 @@ body{
     text-align: left;
     padding: 8px;
   }
-  
+.silde-image {
+
+  width: 300px;
+  text-align: center;
+  display: flex;
+
+ 
+}
 .tr:nth-child(even) {
     /* background-color: #dddddd; */
   }
@@ -65,4 +72,16 @@ body{
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
+}
+
+
+
+
+.user-email li{
+  display: inline-block;
+
+}
+
+.content-comment{
+  background-image: url();
 }
