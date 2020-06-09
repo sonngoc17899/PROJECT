@@ -712,4 +712,3 @@ function search(){
         localStorage.setItem(`hotel`, JSON.stringify(result));
         window.location.href = "ketqua.html"; 
     }  
-}
