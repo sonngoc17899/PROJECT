@@ -5,5 +5,3 @@ let hotel1 = hotel.find(function(value){
 })
 console.log(hotel1);
 
-
-
