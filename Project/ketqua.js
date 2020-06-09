@@ -21,7 +21,7 @@ function show(hotel){
         </td>
         <td><label><h4>${hotel[i].Name}</h4></label>
         <label><p style="color: blue;">${hotel[i].Address}</label></td>
-        <td><label><h5 style="color: red;">Giá mỗi đêm từ ${hotel[i].Price}đ</h5></label></td>
+        <td><label><h5 style="color: red;">${hotel[i].Price}đ/đêm</h5></label></td>
         <td>
             <button onclick="showDetail(${hotel[i].Id});" class="link" style="background-color: coral; color: white; border: 0px; font-family: Arial, Helvetica, sans-serif;
             width: 200px; font-size: 15px; height: 50px">Xem thông tin và đặt phòng!</button>
