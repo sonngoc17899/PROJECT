@@ -1,5 +1,9 @@
 // let hotelID = parseInt(localStorage.getItem("selectedHotel"));
 let hotel = JSON.parse(localStorage.getItem(`hotel`));
+let sName = localStorage.getItem(`name`)
+let startDay = localStorage.getItem(`startDay`);
+let people = localStorage.getItem(`people`);
+console.log(people);
 // console.log(hotelID);
 function show(hotel){
     let tboby = document.getElementById("show");
@@ -37,7 +41,9 @@ function sortPriceUp(){
     show(hotel);
 }
 function showDetail(id){
-    window.location.href = "info.html";
+    localStorage.setItem(`selectedHotelId`, id);
+    localStorage.setItem(`hotel`, JSON.stringify(hotel));
+    window.location.href = "detail.html";
 }
 function Address(){
     let address = document.getElementById("address");
