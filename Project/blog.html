@@ -1,222 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>BLOG</title>
-		<link href="blog.css" rel='stylesheet' type='text/css' />
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
-		<script src="js/jquery.min.js"></script>
-		<!---smoth-scrlling---->
-			<script type="text/javascript">
-				$(document).ready(function(){
-									$('a[href^="#"]').on('click',function (e) {
-									    e.preventDefault();
-									    var target = this.hash,
-									    $target = $(target);
-									    $('html, body').stop().animate({
-									        'scrollTop': $target.offset().top
-									    }, 1000, 'swing', function () {
-									        window.location.hash = target;
-									    });
-									});
-								});
-				</script>
-		<!---//smoth-scrlling---->
-		<!----start-top-nav-script---->
-		<script type="text/javascript" src="js/flexy-menu.js"></script>
-		<script type="text/javascript">$(document).ready(function(){$(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});});</script>
-		<!----//End-top-nav-script---->
-		<!---webfonts---->
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-		<!---webfonts---->
-		<!---calender-style---->
-		<link rel="stylesheet" href="css/jquery-ui.css" />
-		<!---//calender-style---->
-		<!---images-hover-effects--->
-		<link rel="stylesheet" href="css/zalki_hover_img.css" type="text/css" media="screen">
-		<script src="js/jquery.zalki_hover_img.min-0.2.js" type="text/javascript"></script>
-		<script type="text/javascript">
-			$(window).load(function(){
-				$('.main_box').ZalkiHoverImg(
-				);
-				});
-		</script>
-		<!---//images-hover-effects--->
-	</head>
-    <body>
-				<div class="content-header">
-					<div class="header-menu">
-						<ul class="navigation">
-							<li>
-								<a href="home.html"><img src="image/logo.png" alt="logo" width="100px" height="80px"></a>
-							</li>
-							<li class="active">
-								<a href="home.html">Home</a>
-							</li>
-							<li>
-								<a href="Destination.html">Destination</a></li>
-							<li>
-								<a href="blog.html">Blog</a>
-							</li>
-						</ul>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BLOG</title>
+	<link href="blog.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+	<div class="content-header">
+		<div class="header-menu">
+			<ul class="navigation">
+				<li>
+					<a href="home.html"><img src="image/logo.png" alt="logo" width="100px" height="80px"></a>
+				</li>
+				<li class="active">
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<a href="Destination.html">Destination</a></li>
+				<li>
+					<a href="blog.html">Blog</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="blog-grids">
+		<div class="wrap">
+			<div class="blog-grids-head">
+				<h3>Recent Posts</h3>
+			</div>
+			<div class="blog-grids-box">
+				<div class="blog-grid">
+					<div class="blog-poast-head">
+						<div class="blog-art-pic">
+							<a class="post-pic" href="#"> <img src="image/image-destination/Hà nội-ho guom.jpg"
+									title="poast-name" /></a>
+						</div>
+					</div>
+					<div class="blog-info">
+						<h3><a href="#">Du lịch Hà Nội: Cẩm nang từ A đến Z</a></h3>
+						<p>Thành phố Hà Nội là Thủ đô ngàn năm văn hiến với những di tích cổ xưa, cuộc sống yên bình.
+							Nếu đã một lần du lịch Hà Nội, chắc chắn bạn không thể nào quên không khí đặc trưng nơi đây,
+							với Hồ Gươm, Hồ Tây, những quán cafe trầm mặc, những con đường nhỏ và những gánh hàng rong.
+						</p>
+						<a class="btn" href="#">DeTails</a>
 					</div>
 				</div>
-		
-				<div class="top-nav">
-						
-						<div class="search-box">
-							<div id="sb-search" class="sb-search">
-								<form>
-									<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
-									<input class="sb-search-submit" type="submit" value="">
-									<span class="sb-icon-search"> </span>
-								</form>
-							</div>
+				<div class="blog-grid">
+					<div class="blog-poast-head">
+						<div class="blog-art-pic">
+							<a class="post-pic" href="#"> <img src="image/image-destination/Hạ long.jpg"
+									title="poast-name" /></a>
 						</div>
-						<!----search-scripts---->
-						<script src="js/modernizr.custom.js"></script>
-						<script src="js/classie.js"></script>
-						<script src="js/uisearch.js"></script>
-						<script>
-							new UISearch( document.getElementById( 'sb-search' ) );
-						</script>
-						<!----//search-scripts---->
+					</div>
+					<div class="blog-info">
+						<h3><a href="#">Kinh nghiệm du lịch quảng ninh</a></h3>
+						<p>Bạn có thể đến Quảng Ninh vào bất cứ thời điểm nào trong năm. Tuy nhiên nếu muốn đi biển thì
+							bạn chắc chắn phải đi vào mùa hè rồi. Thường thì mùa du lịch biển sẽ hot nhất vào tầm tháng
+							4 đến tháng 9 vì thời gian này vì khi đó thời tiết rất đẹp, biển trong xanh, gió mát lành.
+						</p>
+						<a class="btn" href="#">DeTails</a>
+					</div>
 				</div>
-				<!--- //End-top-nav---->
+				<div class="blog-grid">
+					<div class="blog-poast-head">
+						<div class="blog-art-pic">
+							<a class="post-pic" href="#"> <img src="image/image-destination/Hà nội-ho guom.jpg"
+									title="poast-name" /></a>
+						</div>
+					</div>
+					<div class="blog-info">
+						<h3><a href="#">Tha Hồ Du Hí Với Bí Kíp Du Lịch Nha Trang Tự Túc</a></h3>
+						<p>Là một trong những thiên đường biển “lừng danh” nhất Việt Nam, Nha Trang luôn là địa điểm
+							được cả du khách trong lẫn ngoài nước nhớ đến mỗi khi bỗng “thèm” biển xanh cát trắng. </p>
+						<a class="btn" href="#">DeTails</a>
+					</div>
+				</div>
+				<div class="blog-grid">
+					<div class="blog-poast-head">
+						<div class="blog-art-pic">
+							<a class="post-pic" href="#"> <img src="image/image-destination/Hà nội-ho guom.jpg"
+									title="poast-name" /></a>
+						</div>
+					</div>
+					<div class="blog-info">
+						<h3><a href="#">Danh sách 9 điểm du lịch ở Sài Gòn đi là “KHÔNG THỂ QUÊN” hiện nay</a></h3>
+						<p>Nếu như nhắc về Hà Nội, người ta nghĩ ngay đến một thủ đô nghìn năm văn hiến với vẻ đẹp cổ
+							kính, pha chút mộng mơ và yên bình đến kỳ lạ thì khi nhắc về Sài Gòn, ai cũng háo hức trước
+							sự hoa lệ, sầm uất trên mỗi góc phố. Hãy cùng điểm danh những điểm du lịch ở Sài Gòn không
+							thể bỏ qua nhé!</p>
+						<a class="btn" href="#">DeTails</a>
+					</div>
+				</div>
 				<div class="clear"> </div>
 			</div>
-			<!---//End-header---->
-		</div>
-		<!---start-Blog---->
-		<div class="blog">
-			<div class="destination-head">
-				<div class="wrap">
-					<h3>Blog</h3>
-				</div>
-				<!---End-destinatiuons---->
-				<div class="find-place dfind-place">
-					<div class="wrap">
-						<div class="p-h">
-							<span>FIND YOUR</span>
-							<label>HOLYDAYS</label>
-						</div>
-						<!---strat-date-piker---->
-						  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-						  <script>
-						  $(function() {
-						    $( "#datepicker" ).datepicker();
-						  });
-						  </script>
-						<!---/End-date-piker---->
-						<div class="p-ww">
-							<form>
-								<span> Where</span>
-								<input class="dest" type="text" value="Distination" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Distination';}">
-								<span> When</span>
-								<input class="date" id="datepicker" type="text" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">
-								<input type="submit" value="Search" />
-							</form>
-						</div>
-						<div class="clear"> </div>
-					</div>
-				</div>
-				<!----//End-find-place---->
-			</div>
-			<div class="blog-grids">
-				<div class="wrap">
-					<div class="blog-grids-head">
-						<h3>Recent Posts</h3>
-					</div>
-					<div class="blog-grids-box">
-						<div class="blog-grid">
-							<div class="blog-poast-head">
-								<div class="blog-art-pic">
-									<a class="post-pic" href="#"> <img src="images/blog-pic.jpg" title="poast-name" /></a>
-								</div>
-								<div class="blog-poast-admin">
-									<a href="#"><img src="images/admin-pic1.jpg" title="admin" /></a>
-								</div>	
-								</div>
-								<div class="blog-info">
-									<h3><a href="#">Lorem Ipsum is typesetting industry.</a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-									<a class="btn" href="#">DeTails</a>
-								</div>
-						</div>
-						<div class="blog-grid">
-							<div class="blog-poast-head">
-								<div class="blog-art-pic">
-									<a class="post-pic" href="#"> <img src="images/blog-pic1.jpg" title="poast-name" /></a>
-								</div>
-								<div class="blog-poast-admin">
-									<a href="#"><img src="images/admin-pic2.jpg" title="admin" /></a>
-								</div>
-								</div>
-								<div class="blog-info">
-									<h3><a href="#">Lorem Ipsum is typesetting industry.</a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-									<a class="btn" href="#">DeTails</a>
-								</div>
-						</div>
-						<div class="blog-grid">
-							<div class="blog-poast-head">
-								<div class="blog-art-pic">
-									<a class="post-pic" href="#"> <img src="images/blog-pic2.jpg" title="poast-name" /></a>
-								</div>
-								<div class="blog-poast-admin">
-									<a href="#"><img src="images/admin-pic3.jpg" title="admin" /></a>
-								</div>
-								
-								</div>
-								<div class="blog-info">
-									<h3><a href="#">Lorem Ipsum is typesetting industry.</a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-									<a class="btn" href="#">DeTails</a>
-								</div>
-						</div>
-						<div class="blog-grid">
-							<div class="blog-poast-head">
-								<div class="blog-art-pic">
-									<a class="post-pic" href="#"> <img src="images/blog-pic.jpg" title="poast-name" /></a>
-								</div>
-								<div class="blog-poast-admin">
-									<a href="#"><img src="images/admin-pic4.jpg" title="admin" /></a>
-								</div>
-							
-								</div>
-								<div class="blog-info">
-									<h3><a href="#">Lorem Ipsum is typesetting industry.</a></h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-									<a class="btn" href="#">DeTails</a>
-								</div>
-						</div>
-						<div class="clear"> </div>
-					</div>
-					<div class="criuse-grid-load">
-							<a href="#">Loading More</a>
-					</div>
-				</div>
+			<div class="criuse-grid-load">
+				<a href="#">Loading More</a>
 			</div>
 		</div>
-		<!----//End-Blog---->
-		<!----//End-footer---->
-		<!---start-subfooter---->
-		<div class="subfooter">
-			<div class="wrap">
-				<ul>
-					<li><a href="index.html">Home</a><span>::</span></li>
-					<li><a href="destinations.html">Destinations</a><span>::</span></li>
-					<li><a href="blog.html">Blog</a><span>::</span></li>
-					<li><a href="contact.html">Contact Us</a></li>
-					<div class="clear"> </div>
-				</ul>
-				<p class="copy-right">Made by CS <a href="...">C4EJS71</a></p>
-				<a class="to-top" href="#header"><span> </span> </a>
-			</div>
+	</div>
+	</div>
+	<div class="subfooter">
+		<div class="wrap">
+			<ul>
+				<li><a href="index.html">Home</a><span>::</span></li>
+				<li><a href="destination.html">Destination</a><span>::</span></li>
+				<li><a href="blog.html">Blog</a><span>::</span></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				<div class="clear"> </div>
+			</ul>
+			<p class="copy-right">Made by CS <a href="...">C4EJS71</a></p>
+			<a class="to-top" href="#header"><span> </span> </a>
 		</div>
-		<!---//End-subfooter---->
-		<!----//End-wrap---->
-	</body>
+	</div>
+</body>
+
 </html>

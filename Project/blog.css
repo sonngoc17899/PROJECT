@@ -2701,3 +2701,23 @@ span.mail a:hover{
 		border: solid 1px #1DD2AF;
 	}
 }
+
+.header-menu{
+    width: 70%;
+    height: 100px;
+    padding: 12px 8px;
+    text-align:right;
+}
+.header-menu li{
+    color: rgb(42, 177, 211);
+    /* width: 100px;
+    height: 50px; */
+    display: inline-block;
+    margin: auto;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: -5px;
+
+
+}
