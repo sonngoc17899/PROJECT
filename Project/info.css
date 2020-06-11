@@ -2,19 +2,38 @@ body{
     width: 70%;
     margin: auto;
 }
-.table {
-    
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
+.content{
+  background-color: #f4f7f6;
+  margin-left: 10%;
+}
+label{
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 2;
+}
+.header-menu{
+  width: 70%;
+  height: 80px;
+  padding: 12px 8px;
+  text-align: block;
   
-.table td, th {
-    /* border: 1px solid #dddddd; */
-    text-align: left;
-    padding: 8px;
-  }
-  
+}
+input{
+  font-size: 14px;
+  width: 40%;
+  height: 20px;
+}
+.dat-phong{
+  font-family: inherit;
+  width: 200px;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 500;
+  background-color: #f96d01;
+  display: block;
+  color: white;
+  border: none;
+}
 .tr:nth-child(even) {
     /* background-color: #dddddd; */
   }

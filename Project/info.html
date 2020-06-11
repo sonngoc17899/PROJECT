@@ -7,53 +7,56 @@
     <link rel="stylesheet" href="info.css">
 </head>
 <body>
-    <table class="table">
-        <tr>
-            <th>
+    <div class="header-menu">
+    <a href="home.html"><img src="image/logo.png" alt="logo" width="100px" height="80px"></a>
+    </div>
+    <div class="content">
+    <div style="font-family: MuseoSans,sans-serif; font-size: 30px; text-align:center; line-height: 3;">Đặt phòng khách sạn</div>
+    <div style="font-family: MuseoSans,sans-serif; font-size: 25px;">Thông tin của bạn</div>
                 <div class="infomation">
                     <div>
-                        <p>Họ và tên như trong hộ chiếu</p>
-                        <input type="text" name="name" id="name" placeholder="">
-                    </div>
-                    <div>
-                        <p>email</p>
-                        <input type="email" name="email" id="email" placeholder="Nhập email">
-                    </div>
-                    <div>
-                        <p>Nhập lại email</p>
-                        <input type="email" name="email-1" id="email" placeholder="">
-                    </div>
-                    <div>
-                        <p>Số điện thoại (bắt buộc)</p>
-                        <input type="text" id="phone" placeholder="Nhập số điện thoại">
+                        <label>Tên người liên hệ:*</label>
                         <div>
-
+                            <input type="text" name="name" id="name" placeholder="">
+                        </div>
+                    </div>
+                    <div>
+                        <label>Email:*</label>
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="Nhập email">
+                        </div>
+                    </div>
+                    <div>
+                        <label>Nhập lại email:*</label>
+                        <div>
+                            <input type="email" name="email-1" id="email1" placeholder="">
+                        </div>
+                    </div>
+                    <div>
+                        <label>Số điện thoại:*</label>
+                        <div>
+                            <input type="text" id="phone" placeholder="Nhập số điện thoại">
                         </div>
                     </div>
                 </div>
-            </th>
-            <th>
-                <div class="info-hotel">
-                    <div>
-                        <p>Tên Khách sạn</p>
-                        <p id="hotel-name"></p>
-                    </div>
-                    <div>
-                        <p>Thời gian đến</p>
-                        <p id="time-start"></p>
-                    </div>
-                    <div>
-                       <p>Thời gian đi</p>
-                       <p id="time-end"></p>
-                    </div>
-                    <div>
-                        <p>Số người</p>
-                        <p id="people"></p>
-                    </div>
+                <div style="font-family: MuseoSans,sans-serif; font-size: 25px; line-height: 1.5;">Kiểm tra thông tin khách sạn</div>
+                <div class="infor-hotel">
+                    <div id="hotel-name" style="font-family: MuseoSans,sans-serif; font-size: 16px;">
+                    <table cellpadding="10px">
+                        <tbody id="infor"> 
+
+                        </tbody>
+                    </table>
                 </div>
-            </th>
-        </tr>
-    </table>
+                <div style="font-family: MuseoSans,sans-serif; font-size: 20px; line-height: 2;">Yêu cầu đặc biệt(nếu có)</div>
+                <div style="line-height: 3;">
+                    <input type="text" name="name" placeholder="Nhập yêu cầu của bạn">
+                </div>
+                <div>
+                    <button class="dat-phong" onclick="datPhong();">Xác nhận đặt phòng</button>
+                </div>
+    </div>
+    
     <script src="info.js"></script>
 </body>
 </html>

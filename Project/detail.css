@@ -1,11 +1,19 @@
 .container-detail li{
     display: inline-block;
 }
+.content-detail{
+  height: 100%;
+  width: 60%;
+  background-size: cover;
+  margin: auto;
+}
 body{
     width: 100%;
     margin: auto;
 }
-
+ul, li{
+  display: inline-block;
+}
 .content-body {
     text-align: center;
     font-family: arial, sans-serif;
@@ -21,22 +29,30 @@ body{
     padding: 8px;
   }
 .silde-image {
-
   width: 300px;
   text-align: center;
   display: flex;
 
- 
 }
 .tr:nth-child(even) {
     /* background-color: #dddddd; */
   }
-
 .detai-body li{
-    display: inline-block;
+  display: inline-block;
 }
-
-
+.dat-phong{
+  font-family: inherit;
+  margin-top: 8px;
+  margin-left: auto;
+  width: 200px;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+  background-color: #f96d01;
+  display: block;
+  color: white;
+  border: none;
+}
 /*rating star */
 .rate {
   float: left;
@@ -73,10 +89,6 @@ body{
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
-
-
-
-
 .user-email li{
   display: inline-block;
 
