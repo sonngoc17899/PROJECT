@@ -186,7 +186,7 @@ let a = [
         Name: 'The 1108 sapphire Ha Long',
         Address: 'Số 1, đường Bến Đoan, P. Hồng Gai, TP Hạ Long The 1108 sapphire Ha Long, Cảng Hòn Gai, Ha Long, Việt Nam',
         Province:'Quảng Ninh',
-        District: 'Hạ Long', 
+        District: 'Hồng Gai', 
         Img: ['https://q-xx.bstatic.com/xdata/images/hotel/840x460/238580929.jpg?k=cb2eac432bbe8960b429235c7781cdaf7acf3d2b65dd8a0d2b895fb7900dc3fe&o=',
                 'https://q-xx.bstatic.com/xdata/images/hotel/840x460/225530518.jpg?k=2873550a778d7b8e77e8d85e6721da67fa7f5585a2d4b93ad31b8440a0aaa95a&o=',
                 'https://q-xx.bstatic.com/xdata/images/hotel/840x460/225530531.jpg?k=c7feb64a172957b9a3b42600c8327e6b325d0ff66336422cdffc33afad237367&o=',
@@ -198,9 +198,9 @@ let a = [
     {
         Id: 15,
         Name: 'Royal Villas Halong',
-        Address: 'Đường Bãi Cháy, Hạ Long, Ha Long, Việt Nam',
+        Address: 'Đường Bến Đoan, P. Hồng Gai, TP Hạ Long, Việt Nam',
         Province:'Quảng Ninh',
-        District: 'Hạ Long',
+        District: 'Hồng Gai',
         Img: ['https://pix6.agoda.net/hotelImages/733/73314/73314_16123116390050076371.jpg?s=1024x768',
                 'https://pix6.agoda.net/hotelImages/733/73314/73314_15061617330029695980.jpg?s=1024x768',
                 'https://pix6.agoda.net/hotelImages/733/73314/73314_16123116390050076370.jpg?s=1024x768',
@@ -214,7 +214,7 @@ let a = [
         Name: 'Khách sạn Mường Thanh Grand Hạ Long',
         Address: 'Số 7, Block 20, Khu Hùng Thắng, Bãi Cháy, Hạ Long, Ha Long, Việt Nam',
         Province:'Quảng Ninh',
-        District: 'Hạ Long',
+        District: "Bãi Cháy",
         Img: ['https://pix6.agoda.net/hotelImages/247789/-1/8f5ad0208af2c50bbf606a280dd7d4c1.jpg?s=1024x768',
                 'https://q-xx.bstatic.com/xdata/images/hotel/840x460/241262390.jpg?k=a95775dcb02746273a81cf770d5c78e3cbc188dbac1fbdb91a26c8c30bda50cf&o=',
                 'https://pix6.agoda.net/hotelImages/247/247789/247789_16091916580046620640.jpg?s=1024x768',
@@ -228,7 +228,7 @@ let a = [
         Name: 'Khách sạn City Bay Palace',
         Address: '156, Đường Lê Thánh Tông, Phường Bạch Đằng, TP Hạ Long , Quảng Ninh, Việt Nam', 
         Province: 'Quảng Ninh',
-        District: 'Hạ Long',
+        District: 'Bãi Cháy',
         Img: ['https://pix6.agoda.net/hotelImages/546/546401/546401_15061715060029780368.jpg?s=1024x768',
                 'https://pix6.agoda.net/hotelImages/546/546401/546401_15061715060029780319.jpg?s=1024x768',
                 'https://pix6.agoda.net/hotelImages/546/546401/546401_15061715060029780303.jpg?s=1024x768',
@@ -242,7 +242,7 @@ let a = [
         Name: 'Asean Halong Hotel',
         Address: 'Hậu Cần, Bãi Cháy, Hạ Long, Quảng Ninh, Việt Nam',
         Province: "Quảng Ninh",
-        District:  "Hạ Long",
+        District:  "Bãi Cháy",
         Img: ['https://pix6.agoda.net/hotelImages/200/200544/200544_14080520200020699118.jpg?s=1024x768',
                 'https://pix6.agoda.net/hotelImages/200/200544/200544_14032614310018861875.jpg?s=1024x768',
                 'https://pix6.agoda.net/hotelImages/200/200544/200544_14032615000018862378.jpg?s=1024x768c',
@@ -256,7 +256,7 @@ let a = [
         Name: 'Khách sạn Sài Gòn Hạ Long',
         Address: 'Đường Hạ long, phường Bãi Cháy, thành phố Hạ long, tỉnh Quảng Ninh',
         Province: "Quảng Ninh",
-        District: "Hạ Long",
+        District: "Hồng Gai",
         Img: ['https://pix6.agoda.net/hotelImages/434/43427/43427_16051708510042386025.jpg?s=1024x768',
                 'https://pix6.agoda.net/hotelImages/434/43427/43427_17022415180051232415.jpg?s=1024x768',
                 'https://pix6.agoda.net/hotelImages/434/43427/43427_16051709170042387107.jpg?s=1024x768',
@@ -717,7 +717,5 @@ function search(){
         localStorage.setItem(`hotel`, JSON.stringify(result));
         window.location.href = "ketqua.html"; 
     }  
-<<<<<<< HEAD
-=======
 }
->>>>>>> da2b894f1b2001fbf7f8f8a0ea7234c2b57e8b45
+

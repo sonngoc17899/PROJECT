@@ -1,17 +1,19 @@
 // let hotelID = parseInt(localStorage.getItem("selectedHotel"));
 let hotel = JSON.parse(localStorage.getItem(`hotel`));
-let sName = localStorage.getItem(`name`)
 let startDay = localStorage.getItem(`startDay`);
 let people = localStorage.getItem(`people`);
-console.log(people);
+let day = localStorage.getItem(`soDem`);
+let name = localStorage.getItem(`name`);
 // console.log(hotelID);
 function show(hotel){
     let tboby = document.getElementById("show");
     tboby.innerHTML = "";
+    let ketqua = document.getElementById(`ketqua`);
     let error = document.getElementById("error");
     let html1 = `<br><h2>Không tìm thấy kết quả</h2>
                 <br><h3>Vui lòng kiểm tra lại lỗi chính tả, dấu cách và các ký tự đặc biệt khác</h3></br>
     `
+    ketqua.innerHTML = `<h2>Kết quả tìm kiếm của bạn tại ${name}, Việt Nam</h2>`
     if(hotel.length === 0) error.innerHTML = html1;
     for(let i=0;i<hotel.length;i++)
     {
@@ -20,11 +22,11 @@ function show(hotel){
         <img src="${hotel[i].Img[2]}" alt="" width="200px" height="150px">
         </td>
         <td><label><h4>${hotel[i].Name}</h4></label>
-        <label><p style="color: blue;">${hotel[i].Address}</label></td>
-        <td><label><h5 style="color: red;">${hotel[i].Price}đ/đêm</h5></label></td>
+        <br><p style="color: blue;">${hotel[i].Address}</br></td>
+        <td><p style="color: red; margin-left: 10px; font-size: 20px">${hotel[i].Price} VND</p></td>
         <td>
             <button onclick="showDetail(${hotel[i].Id});" class="link" style="background-color: coral; color: white; border: 0px; font-family: Arial, Helvetica, sans-serif;
-            width: 200px; font-size: 15px; height: 50px">Xem thông tin và đặt phòng!</button>
+            width: 190px; font-size: 13px; height: 50px">Xem thông tin và đặt phòng!</button>
         </td>
         </tr>
         `
