@@ -10,6 +10,23 @@
     text-decoration: none;
     color: #35393e;
 }
+.subfooter {
+    background: #2C3E50;
+    border-top: 1px solid #394C5F;
+    text-align: center;
+    padding: 1.5em 0 2em;
+    position: relative;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.subfooter ul li{
+    display: inline-block;
+}
+.subfooter ul li a, span{
+    color: white;
+}
 select{
     cursor: pointer;
 }
