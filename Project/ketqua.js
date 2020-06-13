@@ -17,22 +17,24 @@ function show(hotel){
     if(hotel.length === 0) error.innerHTML = html1;
     for(let i=0;i<hotel.length;i++)
     {
-        let html = `<tr>
-        <td>
+        let html = `<tr onclick="showDetail(${hotel[i].Id});">
+        <td style="border: 1px soild black">
         <img src="${hotel[i].Img[2]}" alt="" width="200px" height="150px">
         </td>
-        <td><label><h4>${hotel[i].Name}</h4></label>
-        <br><p style="color: blue;">${hotel[i].Address}</br></td>
-        <td><p style="color: red; margin-left: 10px; font-size: 20px">${hotel[i].Price} VND</p></td>
-        <td>
-            <button onclick="showDetail(${hotel[i].Id});" class="link" style="background-color: coral; color: white; border: 0px; font-family: Arial, Helvetica, sans-serif;
-            width: 190px; font-size: 13px; height: 50px">Xem thông tin và đặt phòng!</button>
-        </td>
+        <td><label><h4 style="margin-left: 20px">${hotel[i].Name}</h4></label>
+        <br><p style="color: #8f8f8f; margin-left: 20px"">${hotel[i].Address}</br></td>
+        <td><p style="color: #1ba0e2; margin-left: 20px; font-size: 12px; font-weight: 700; font-family: MuseoSans,sans-serif;">Thanh toán khi nhận phòng</p>
+        <p style="margin-left: 20px; margin-right: 10px; font-size: 18px; font-weight: 700; color: #f96d01; font-family: MuseoSans,sans-serif;">${vnd(hotel[i].Price.toString())} VND</p></td>
         </tr>
+        <span class="hover" style="color: white; font-size: 0px; line-height: 0;">Khoảng trắng</span>
         `
         tboby.innerHTML += html;
     }
 }
+{/* <td>
+<button onclick="showDetail(${hotel[i].Id});" class="link" style="background-color: coral; color: white; border: 0px; font-family: Arial, Helvetica, sans-serif;
+width: 190px; font-size: 15px; height: 50px; border-radius: 4px;">Đặt phòng ngay!</button>
+</td> */}
 show(hotel);
 function sortPriceDow(){
     hotel.sort(function(a, b){return b.Price - a.Price});
@@ -45,7 +47,9 @@ function sortPriceUp(){
 function showDetail(id){
     localStorage.setItem(`selectedHotelId`, id);
     localStorage.setItem(`hotel`, JSON.stringify(hotel));
-    window.location.href = "detail.html";
+    setTimeout(function(){
+        window.location.href = "detail.html";
+    },500)
 }
 function Address(){
     let address = document.getElementById("address");
@@ -76,4 +80,15 @@ function id3(){
     show(id);
 }
 
-
+function vnd(a){
+    let b = a.split(``);
+    if(b.length >=4 && b.length <=6){
+    b.splice(b.length-3, 0, `.`)
+    }else if(b.length >=7 && b.length<=9)
+    {
+    b.splice(b.length-3, 0, `.`);
+    b.splice(b.length-7, 0, `.`);
+    }
+    let c = b.join(``);
+    return c;
+}

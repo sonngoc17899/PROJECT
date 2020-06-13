@@ -1,4 +1,4 @@
-let a = [
+let data = [
     {
         Id: 1,
         Name: "Khách Sạn & Căn Hộ Bảo Hưng" ,
@@ -30,7 +30,7 @@ let a = [
     {
         Id: 3,
         Name: "Khách sạn Sofitel Legend Metropole Hà Nội",
-        Address: "Số 15, Phố Ngô Quyền, Quận Hoàn Kiếm, Quận Hoàn Kiếm, Hà Nội, Việt Nam",
+        Address: "Số 15, Phố Ngô Quyền, Quận Hoàn Kiếm, Hà Nội, Việt Nam",
         Province: "Hà Nội",
         District: "Hoàn Kiếm",
         Img: ['https://pix6.agoda.net/hotelImages/5082490/0/5e25d8134ba64ad0a950c3be9c67799e.jpg?s=1024x768',
@@ -44,7 +44,7 @@ let a = [
     {
         Id: 4 ,
         Name: 'The Lapis Hotel',
-        Address: "21 Tran Hung Dao, Hoang Kiem,, Quận Hoàn Kiếm, Hà Nội" ,
+        Address: "21 Tran Hung Dao, Hoang Kiem, Quận Hoàn Kiếm, Hà Nội" ,
         Province:"Hà Nội",
         District: "Hoàn Kiếm",
         Img: ['https://pix6.agoda.net/hotelImages/1804917/-1/27124a40a12356dcf5c3600b86aadd90.jpg?s=1024x768',
@@ -100,7 +100,7 @@ let a = [
     {
         Id: 8, 
         Name: 'Melia Hanoi Hotel' ,
-        Address: 'Số 44B, Phố Lý Thường Kiệt, Quận Hòan Kiếm, Quận Hoàn Kiếm, Hà Nội, Việt Nam',
+        Address: 'Số 44B, Phố Lý Thường Kiệt, Quận Hoàn Kiếm, Hà Nội, Việt Nam',
         Province:"Hà Nội",
         District: 'Hoàn Kiếm' ,
         Img: ['https://pix6.agoda.net/hotelImages/109/10965/10965_17052307070053155369.jpg?s=1024x768',
@@ -114,7 +114,7 @@ let a = [
     {
         Id: 9,
         Name: "Khách Sạn De l'Opera Hà Nội - Mgallery" ,
-        Address: "Số 29 Phố Tràng Tiền, Quận Hoàn Kiếm, Quận Hoàn Kiếm, Hà Nội, Việt Nam",
+        Address: "Số 29 Phố Tràng Tiền, Quận Hoàn Kiếm, Hà Nội, Việt Nam",
         Province:"Hà Nội",
         District: 'Hoàn Kiếm' ,
         Img: ['https://pix6.agoda.net/hotelImages/4885116/0/3ec7a573097742323e2f976670239467.jpg?s=1024x768',
@@ -128,7 +128,7 @@ let a = [
     {
         Id: 10,
         Name: 'Movenpick Hotel Hanoi',
-        Address: '83A Lý Thường Kiệt, Quận Hoàn Kiếm, Quận Hoàn Kiếm, Hà Nội, Việt Nam',
+        Address: '83A Lý Thường Kiệt, Quận Hoàn Kiếm, Hà Nội, Việt Nam',
         Province:"Hà Nội",
         District: 'Hoàn Kiếm',
         Img: ['https://pix6.agoda.net/hotelImages/4877926/0/8a0299c7e771b71901a242423bc8040a.jpg?s=1024x768',
@@ -347,7 +347,7 @@ let a = [
         `https://pix6.agoda.net/hotelImages/663/66349/66349_16092210290046767535.jpg?s=1024x768`,
         `https://pix6.agoda.net/hotelImages/254884/-1/e2215bfc995092a4e20a71cd2ccebf57.jpg?s=1024x768`],
         Description: "Nằm ở trung tâm thành phố",
-        Price: 9e3,
+        Price: 9e5,
     },
     {
         Id: 26,
@@ -423,7 +423,7 @@ let a = [
         Id: 31,
         Name: "Silverland Central Hotel",
         Address: "14 - 16 Lê Lai, Quận 1, Hồ Chí Minh, Việt Nam",
-        Province: "Hồ Chí Minh",
+        Province: "TP. Hồ Chí Minh",
         District: "Quận 1",
         Img: [`https://pix6.agoda.net/hotelImages/148706/-1/f9e272fe4c31acaafd12e2c2bc3347fb.jpg?s=1024x768`,
         `https://pix6.agoda.net/hotelImages/148706/-1/5174e9ab3240b8b4f74f7136fd707642.jpg?s=1024x768`,
@@ -437,7 +437,7 @@ let a = [
         Id: 32,
         Name: "Khách Sạn M Boutique",
         Address: "7A Thái Văn Lung, Quận 1, Hồ Chí Minh, Việt Nam, 70000",
-        Province: "Hồ Chí Minh",
+        Province: "TP. Hồ Chí Minh",
         District: "Quận 1",
         Img: [`https://pix6.agoda.net/hotelImages/100/1009828/1009828_15110416540037489248.jpg?s=1024x768`,
         `https://pix6.agoda.net/hotelImages/100/1009828/1009828_15110417060037489922.jpg?s=1024x768`,
@@ -451,7 +451,7 @@ let a = [
         Id: 33, 
         Name: "Hotel Sunny Saigon",
         Address: "232 Đường Đề Thám, Phường Phạm Ngũ Lão, Quận 1, Hồ Chí Minh, Việt Nam",
-        Province: "Hồ Chí Minh",
+        Province: "TP. Hồ Chí Minh",
         District: "Quận 1",
         Img: [`https://pix6.agoda.net/hotelImages/335268/-1/ac861b5655ba5e784d4fb22f88f0f870.jpg?s=1024x768`,
         `https://pix6.agoda.net/hotelImages/335268/-1/b0a88bca1cb271a1b6d4e3f8203c415e.jpg?s=1024x768`,
@@ -465,7 +465,7 @@ let a = [
         Id: 34,
         Name: "H79 Hotel",
         Address: "7B cong hoa phuong 4 quan tan binh, Quận Tân Bình, Hồ Chí Minh, Việt Nam",
-        Province: "Hồ Chí Minh",
+        Province: "TP. Hồ Chí Minh",
         District: "Quận Tân Bình",
         Img: [`https://pix6.agoda.net/hotelImages/761/7617575/7617575_19060613310075365267.jpg?s=1024x768`,
              `https://pix6.agoda.net/hotelImages/761/7617575/7617575_19060613320075365273.jpg?s=1024x768`,
@@ -479,7 +479,7 @@ let a = [
         Id: 35,
         Name: "Khách Sạn Mars & Venus",
         Address: "25/22 Cuu Long street, Quận Tân Bình, Hồ Chí Minh, Việt Nam",
-        Province: "Hồ Chí Minh",
+        Province: "TP. Hồ Chí Minh",
         District: "Quận Tân Bình",
         Img: [`https://pix6.agoda.net/hotelImages/12535347/-1/0507502aacb32a5573f713c0532c18d0.jpg?s=1024x768`,
              `https://pix6.agoda.net/hotelImages/125/12535347/12535347_20013113350087658793.png?s=1024x768`,
@@ -493,7 +493,7 @@ let a = [
         Id: 36,
         Name: "Blue Sky Hotel",
         Address: "88 Yen The, Phuong 2, Quan Tan Binh, Quận Tân Bình, Hồ Chí Minh, Việt Nam",
-        Province: "Hồ Chí Minh",
+        Province: "TP. Hồ Chí Minh",
         District: "Quận Tân Bình",
         Img: [`https://pix6.agoda.net/hotelImages/6180809/-1/5c797bab27d56007227b17333ecd4309.jpg?s=1024x768`,
         `https://pix6.agoda.net/hotelImages/6180809/-1/8636d2a241592cef915343b1caebe6e5.jpg?s=1024x768`,
@@ -507,7 +507,7 @@ let a = [
         Id: 37,
         Name: "Khách sạn Silk",
         Address: "54/35 Bach Dang, Ward 2, Tan Binh, Quận Tân Bình, Hồ Chí Minh, Việt Nam",
-        Province: "Hồ Chí Minh",
+        Province: "TP. Hồ Chí Minh",
         District: "Quận Tân Bình",
         Img: [`https://pix6.agoda.net/hotelImages/581/5815278/5815278_20050814020090317432.jpg?s=1024x768`,
         `https://pix6.agoda.net/hotelImages/581/5815278/5815278_18091915510068057059.jpg?s=1024x768`,
@@ -521,7 +521,7 @@ let a = [
         Id: 38,
         Name: "Ramana Saigon Hotel",
         Address: "323 Lê Văn Sỹ, Quận 3, Quận 3, Hồ Chí Minh, Việt Nam",
-        Province: "Hồ Chí Minh",
+        Province: "TP. Hồ Chí Minh",
         District: "Quận 3",
         Img: [`https://pix6.agoda.net/hotelImages/163/163/163_17092815000056890422.jpg?s=1024x768`,
         `https://pix6.agoda.net/hotelImages/163/-1/3a312f949f6757997ef5c35e801b15e0.jpg?s=1024x768`,
@@ -535,7 +535,7 @@ let a = [
         Id: 39,
         Name: "Sonnet Saigon Hotel",
         Address: "14 Truong Dinh, Quận 3, Hồ Chí Minh, Việt Nam",
-        Province: "Hồ Chí Minh",
+        Province: "TP. Hồ Chí Minh",
         District: "Quận 3",
         Img: [`https://pix6.agoda.net/hotelImages/625/625728/625728_15061517240029566163.jpg?s=1024x768`,
         `https://pix6.agoda.net/property/8248916/93773771/6e773e3f3246e3b6ea20c59381cb326f.jpg?s=1024x768`,
@@ -549,7 +549,7 @@ let a = [
         Id: 40,
         Name: "Cozrum Homes Truong Dinh",
         Address: "73 Truong Dinh, Ward 6, District 3, Quận 3, Hồ Chí Minh, Việt Nam",
-        Province: "Hồ Chí Minh",
+        Province: "TP. Hồ Chí Minh",
         District: "Quận 3",
         Img: [`https://pix6.agoda.net/hotelImages/105/10572255/10572255_19111110200083335404.jpg?s=1024x768`,
         `https://q-xx.bstatic.com/xdata/images/hotel/840x460/173680831.jpg?k=5ac2fdf3c196cf3098b1cef40473b663324332bafbbc766efa753eaba740da73&o=`,
@@ -700,6 +700,22 @@ let a = [
         Price: 717e3,
     },
 ]
+let comment = [
+    `Nhân viên nhiệt tình`,
+    `Khách sạn 4 sao mới`,
+    `Dịch vụ khách hàng tuyệt vời`,
+    `Khách sạn tốt nhất Việt Nam`,
+    `Khách sạn 4 sao đẹp nhất`,
+    `Hình ảnh với thực tế giống nhau`,
+    `Trên cả tuyệt vời`,
+    `Rất tốt với giá tiền`,
+    `Khách sạn mới đẹp và nhân viên thân thiện`,
+    `Kì nghỉ tuyệt vời tại khách sạn này`,
+    `Khách sạn có kiến trúc đẹp`,
+    `Khách sạn đẹp và cảnh quan tuyệt vời`,
+    `Các bạn nhân viên rất nhiệt tình`,
+    `Khách sạn có phục vụ tốt`,
+]
 function search(){
     let sName = document.getElementById(`search-place`).value;
     let startDay = document.getElementById(`search-begin-day`).value;
@@ -707,15 +723,19 @@ function search(){
     let day = document.getElementById(`soDem`).value;
     let result = [];
     if(sName.trim()!=="" && startDay.trim()!==""){
-        result = a.filter(function(value){
-            return value.Province.toLocaleLowerCase().includes(sName.trim().toLocaleLowerCase()) || value.District.toLocaleLowerCase().includes(sName.trim().toLocaleLowerCase());
+        result = data.filter(function(value){
+            return value.Province.toLocaleLowerCase().includes(sName.trim().toLocaleLowerCase()) || value.Province.toLocaleLowerCase().search(sName.toLocaleLowerCase())>0;
         });
         localStorage.setItem(`people`, people);
         localStorage.setItem(`name`, sName);
         localStorage.setItem(`startDay`, startDay);
         localStorage.setItem(`soDem`, day);
+        localStorage.setItem(`comment`, comment);
         localStorage.setItem(`hotel`, JSON.stringify(result));
-        window.location.href = "ketqua.html"; 
+        setTimeout(function(){
+            window.location.href = "ketqua.html"; 
+        }, 500);
+        
     }  
 }
 

@@ -63,122 +63,38 @@
         <ul><li>
           <div id="gia"></div>
           <div id="mota" style="margin-right: 200px"></div>
+              <div style="margin-right: 100%;">
+                <button class="dat-phong" onclick="showInfo();">Đặt phòng ngay</button>
+              </div>
         </li></ul>
       </div>
+      
       <ul>
         <li>
-          <button class="dat-phong" onclick="showInfo();">Đặt phòng ngay</button>
-        </li>
-      </ul>
-    </div>
-      <div>
-          <div class="detai-body">
-            <ul>
-              <li>
-                <div class="comment-1">
-                  comment nổi bật 
-                </div>
-              </li>
-              <li>
-                <!-- <div class="rating">
-                    <span>
-                    <input type="radio" id="star5" name="rating" value="5" />☆
-                    </span>
-                    <span>☆</span>
-                    <span>☆</span>
-                    <span>☆</span>
-                    <span>☆</span>
-                </div> -->
-                <div class="rate">
-                  <input type="radio" id="star5" name="rate" value="5" />
-                  <label for="star5" title="text">5 stars</label>
-                  <input type="radio" id="star4" name="rate" value="4" />
-                  <label for="star4" title="text">4 stars</label>
-                  <input type="radio" id="star3" name="rate" value="3" />
-                  <label for="star3" title="text">3 stars</label>
-                  <input type="radio" id="star2" name="rate" value="2" />
-                  <label for="star2" title="text">2 stars</label>
-                  <input type="radio" id="star1" name="rate" value="1" />
-                  <label for="star1" title="text">1 star</label>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </td>
-        <td>
-          <div class="content1">
-            <p>Comment</p>
-            <div class="content-1">
-             <div class="user-star">
-              <ul>
-                <li>
-                  <input type="text" name="user" id="user" placeholder="user ">
-                </li>
-                <li>
-                  <div class="star">
-                    star
-                  </div>
-                </li>
-              </ul>
-             </div>
-             <div class="email">
-              <input type="email" name="email" id="email" placeholder="email">
-             </div>
-             <input type="text" name="comment" id="comment" placeholder="Mời bạn để lại bình luận ">
+            <div id="comment">
             </div>
-          </div>
-    
-        </td>
-      </tr>
-    </div>
-    <!-- <div class="container-detail">
-      <ul>
-        <li>
-          <div class="detail-body">detail</div>
-        </li>
-        <li>
-          <div class="side-detail">side</div>
-        </li>
-      </ul>
-
-    </div> -->
-    <!-- <div class="detai-body">
-      <ul>
-        <li>
-          <div class="comment-1">
-            comment nổi bật 
-          </div>
-        </li>
-        <li>
-          <div class="star">
-            sao tb
-          </div>
-        </li>
-      </ul>
-    </div>
-     -->
-    <!-- <div class="content">
-      <p>Comment</p>
-      <div class="content-1">
-       <div class="user-star">
-        <ul>
-          <li>
-            <input type="text" name="user" id="user" placeholder="user ">
-          </li>
-          <li>
-            <div class="star">
-              star
+            <div id="users">
             </div>
-          </li>
-        </ul>
-       </div>
-       <div class="email">
-        <input type="email" name="email" id="email" placeholder="email">
-       </div>
-       <input type="text" name="comment" id="comment" placeholder="Mời bạn để lại bình luận ">
-      </div>
-    </div> -->
-  </div>
+            <textarea type="text" id="comment-user"  placeholder="Mời bạn để lại bình luận" style="width: 590px; height: 100px; border: 1px solid #dadada; outline: none;"></textarea>
+            <div>
+              <div class="rate" id="star">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label style="font-size: 25px;" for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label style="font-size: 25px" for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label style="font-size: 25px" for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label style="font-size: 25px" for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label style="font-size: 25px" for="star1" title="text">1 star</label>
+                <p style="color: #1ba0e2; margin-right: 3px; font-size: 10px; font-weight: 700; font-family: MuseoSans,sans-serif;">(Đánh giá khách sạn)</p>
+              </div>
+                <button onclick="send()" class="binh-luan">Gửi</button>
+            </div>
+        </li>
+     <div>
+        
         <script src="detail.js"></script>
         <script src="data.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -1,10 +1,19 @@
 body{
-    width: 70%;
+    width: 100%;
     margin: auto;
 }
+div ul li{
+  display: inline-block;
+}
+.header-menu ul li{
+  display: inline-block;
+  font-size: 15px;
+  margin: center;
+}
 .content{
-  background-color: #f4f7f6;
-  margin-left: 10%;
+  background-color: white;
+  margin-left: 5%;
+  margin-top: 10px;
 }
 label{
   font-family: inherit;
@@ -16,12 +25,13 @@ label{
   height: 80px;
   padding: 12px 8px;
   text-align: block;
-  
 }
 input{
   font-size: 14px;
   width: 40%;
-  height: 20px;
+  height: 30px;
+  border: 1px solid #dadada;
+  outline: none;
 }
 .dat-phong{
   font-family: inherit;
@@ -34,6 +44,3 @@ input{
   color: white;
   border: none;
 }
-.tr:nth-child(even) {
-    /* background-color: #dddddd; */
-  }
