@@ -1,118 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
-</head>
-<body>
-      <div class="container">
-        <div class="content-header">
-			<div class="logo">
-				<a href="home.html"><img src="image/logo.png" alt="logo" width="150px" height="120px"></a>
-			</div>
-			<div class="header-menu">
-				<ul class="navigation">
-					<li class="active">
-						<a href="home.html">Home</a>
-					</li>
-					<li class="active-1">
-						<a href="Destination.html">Destination</a></li>
-					<li class="active-2">
-						<a href="blog.html">Blog</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-          <div class="content">
-            <div class="text">
-              <div class="content-body">
-                <div style="color: cornflowerblue; height: 50px; ">
-                    <h4>Tìm kiếm khách sạn, khu nghỉ dưỡng và hơn thế nữa...</h4>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://addevent.com/libs/atc/1.6.1/atc.min.js"
+      async
+      defer
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <a class="navbar-brand" href="#">
+            <img src="image/logo.png" alt="logo" width="150" height="50">
+          </a>
+     
+        <!-- <a class="navbar-brand" href="/">Home</a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" style="margin-right:115px" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Destination.html">Destination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="content">
+        <div class="text">
+          <div class="content-body">
+            <div style="color: cornflowerblue; height: 50px">
+              <h4>Tìm kiếm khách sạn, khu nghỉ dưỡng và hơn thế nữa...</h4>
+            </div>
+            <div style="line-height: 1">
+              <ul class="nav nav-pills">
+                <div class="form-group">
+                  <select
+                    class="form-control"
+                    id="search-place"
+                    id="exampleFormControlSelect1"
+                    style="width: 500px; height: 70px"
+                  >
+                    <option>Hà Nội</option>
+                    <option>Quảng Ninh</option>
+                    <option>Đà Nẵng</option>
+                    <option>Nha Trang</option>
+                    <option>TP. Hồ Chí Minh</option>
+                  </select>
                 </div>
-                      <div style="line-height: 1;"> 
-                              <ul class="nav nav-pills">
-                                  <div class="form-group">
-                                      <select class="form-control"  id="search-place" id="exampleFormControlSelect1" style="width: 500px; height: 70px;">
-                                        <option>Hà Nội</option>
-                                        <option>Quảng Ninh</option>
-                                        <option>Đà Nẵng </option>
-                                        <option>Nha Trang</option>
-                                        <option>TP. Hồ Chí Minh</option>
-                                      </select>
-                                  </div>
-                              </ul>
-                      </div>
-                  <div style="line-height: 1;">
-                      <ul>
-                          <!-- <li> -->
-                              <!-- <form class="col-15">
+              </ul>
+            </div>
+            <div style="line-height: 1">
+              <ul>
+                <!-- <li> -->
+                <!-- <form class="col-15">
                                   
                                   <div class="form-group" style="color: black; margin-left: 0px;">
                                       <label for="search-product-name">Thành phố, địa điểm:</label>
                                       <input type="text" id="search-place" class="form-control" placeholder="Bạn muốn đến đâu">
                                   </div>
                               </form> -->
-                          <!-- </li> -->
-                          <li style="margin-right: 5px;"> 
-                              <form action="action_page.php">
-                                  <div>
-                                      <input id="search-begin-day" type="datetime-local" name="bdaytime" class="form-control" placeholder="Ngày đến" style="height: 70px; width: 300px;">
-                                  </div>
-                              </form>
-                          </li>
-                          <li style="margin-right: 20px;">
-                              <ul class="nav nav-pills">
-                                  <div>
-                                      <select class="form-control"  id="soDem" id="exampleFormControlSelect1" style="width: 195px; height: 70px;">
-                                        <option>1 đêm</option>
-                                        <option>2 đêm</option>
-                                        <option>3 đêm</option>
-                                        <option>4 đêm</option>
-                                        <option>5 đêm</option>
-                                        <option>6 đêm</option>
-                                        <option>7 đêm</option>
-                                        <option>7 đêm</option>
-                                        <option>9 đêm</option>
-                                        <option>10 đêm</option>
-                                        <option>11 đêm</option>
-                                        <option>12 đêm</option>
-                                        <option>13 đêm</option>
-                                        <option>14 đêm</option>
-                                      </select>
-                                  </div>
-                              </ul>
-                          </li> 
-                      </ul>   
+                <!-- </li> -->
+                <li style="margin-right: 5px">
+                  <form action="action_page.php">
+                    <div>
+                      <input
+                        id="search-begin-day"
+                        type="datetime-local"
+                        name="bdaytime"
+                        class="form-control"
+                        placeholder="Ngày đến"
+                        style="height: 70px; width: 300px"
+                      />
+                    </div>
+                  </form>
+                </li>
+                <li style="margin-right: 20px">
+                  <ul class="nav nav-pills">
+                    <div>
+                      <select
+                        class="form-control"
+                        id="soDem"
+                        id="exampleFormControlSelect1"
+                        style="width: 195px; height: 70px"
+                      >
+                        <option>1 đêm</option>
+                        <option>2 đêm</option>
+                        <option>3 đêm</option>
+                        <option>4 đêm</option>
+                        <option>5 đêm</option>
+                        <option>6 đêm</option>
+                        <option>7 đêm</option>
+                        <option>7 đêm</option>
+                        <option>9 đêm</option>
+                        <option>10 đêm</option>
+                        <option>11 đêm</option>
+                        <option>12 đêm</option>
+                        <option>13 đêm</option>
+                        <option>14 đêm</option>
+                      </select>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div style="line-height: 1">
+              <ul class="nav nav-pills">
+                <li style="line-height: 1.25">
+                  <div>
+                    <select
+                      class="form-control"
+                      id="people"
+                      id="exampleFormControlSelect1"
+                      style="width: 300px; height: 70px"
+                    >
+                      <option>Đi một mình</option>
+                      <option>Cặp đôi/2 người</option>
+                      <option>Theo gia đình</option>
+                      <option>Theo đoàn nhóm</option>
+                      <option>Đi công tác</option>
+                    </select>
                   </div>
-                  <div style="line-height: 1;">
-                      <ul class="nav nav-pills">
-                          <li style="line-height: 1.25;">  
-                              <div>
-                                  <select class="form-control" id="people" id="exampleFormControlSelect1" style="width: 300px; height: 70px;">
-                                      <option>Đi một mình</option>
-                                      <option>Cặp đôi/2 người</option>
-                                      <option>Theo gia đình</option>
-                                      <option>Theo đoàn nhóm</option>
-                                      <option>Đi công tác</option>
-                                      </select>
-                              </div>
-                          </li>
-                                  <li style="line-height: 1.25;">
-                                      <button class="search" onclick="search(event);">
-                                     <span>TÌM</span>
-                                  </button>
-                                  </li>
-                          </ul>
-                  </div>
-              </div>
-              </div>
+                </li>
+                <li style="line-height: 1.25">
+                  <button class="search" onclick="search(event);">
+                    <span>TÌM</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
           </div>
-          
-                <!-- <div class="toolbar">
+        </div>
+      </div>
+
+      <!-- <div class="toolbar">
                     <ul>
                         <li>
                             <div class="people">
@@ -133,67 +178,111 @@
                         </li>
                     </ul>
                 </div> -->
-            <h3 style="line-height: 2">Điểm đến phổ biến nhất</h3>
-            <div class="diem-den">
-                <div class="column">
-                    <a href="blog.html">
-                     <div>
-                        <img src="image/canh-dep-ha-long-viet-nam_055419665.jpg" alt="vinh ha long" alt="Snow" style="width:100%" height="150px">
-                     </div>   
-                    <span><h5 style="color: black;">Quảng Ninh</h5></span>
-                </a>  
-                </div>
-                <div class="column">
-                    <a href="blog.html">
-                     <div>
-                        <img src="image/Hà-Nội.jpg" alt="vinh ha long" alt="Snow" style="width:100%" height="150px">
-                     </div>   
-                    <span><h5 style="color: black;">Hà Nội</h5></span>
-                </a>  
-                </div>
-                <div class="column">
-                    <a href="blog.html">
-                     <div>
-                        <img src="image/Đà-Nẵng.jpg" alt="vinh ha long" alt="Snow" style="width:100%" height="150px">
-                     </div>   
-                    <span><h5 style="color: black;">Đà Nẵng</h5></span>
-                </a>  
-                </div>
-                <div class="column">
-                    <a href="blog.html">
-                     <div>
-                        <img src="image/Nha-Trang.jpg" alt="vinh ha long" alt="Snow" style="width:100%" height="150px">
-                     </div>   
-                    <span><h5 style="color: black;">Nha Trang</h5></span>
-                </a>  
-                </div>
-                <div class="column">
-                    <a href="blog.html">
-                     <div>
-                        <img src="image/Hồ-Chí-Minh.jpg" alt="vinh ha long" alt="Snow" style="width:100%" height="150px">
-                     </div>   
-                    <span><h5 style="color: black;">TP Hồ Chí Minh</h5></span>
-                </a>  
-                </div>
+      <h3 style="line-height: 2">Điểm đến phổ biến nhất</h3>
+      <div class="diem-den">
+        <div class="column">
+          <a href="blog.html">
+            <div>
+              <img
+                src="image/canh-dep-ha-long-viet-nam_055419665.jpg"
+                alt="vinh ha long"
+                alt="Snow"
+                style="width: 100%"
+                height="150px"
+              />
             </div>
+            <span><h5 style="color: black">Quảng Ninh</h5></span>
+          </a>
+        </div>
+        <div class="column">
+          <a href="blog.html">
+            <div>
+              <img
+                src="image/Hà-Nội.jpg"
+                alt="vinh ha long"
+                alt="Snow"
+                style="width: 100%"
+                height="150px"
+              />
+            </div>
+            <span><h5 style="color: black">Hà Nội</h5></span>
+          </a>
+        </div>
+        <div class="column">
+          <a href="blog.html">
+            <div>
+              <img
+                src="image/Đà-Nẵng.jpg"
+                alt="vinh ha long"
+                alt="Snow"
+                style="width: 100%"
+                height="150px"
+              />
+            </div>
+            <span><h5 style="color: black">Đà Nẵng</h5></span>
+          </a>
+        </div>
+        <div class="column">
+          <a href="blog.html">
+            <div>
+              <img
+                src="image/Nha-Trang.jpg"
+                alt="vinh ha long"
+                alt="Snow"
+                style="width: 100%"
+                height="150px"
+              />
+            </div>
+            <span><h5 style="color: black">Nha Trang</h5></span>
+          </a>
+        </div>
+        <div class="column">
+          <a href="blog.html">
+            <div>
+              <img
+                src="image/Hồ-Chí-Minh.jpg"
+                alt="vinh ha long"
+                alt="Snow"
+                style="width: 100%"
+                height="150px"
+              />
+            </div>
+            <span><h5 style="color: black">TP Hồ Chí Minh</h5></span>
+          </a>
+        </div>
       </div>
-      <div class="subfooter">
-		<div class="wrap">
-			<ul>
-				<li><a href="index.html">Home</a><span>::</span></li>
-				<li><a href="destination.html">Destination</a><span>::</span></li>
-				<li><a href="blog.html">Blog</a><span>::</span></li>
-				<li><a href="contact.html">Contact Us</a></li>
-				<div class="clear"> </div>
-			</ul>
-			<p style="color: #7F91A2" class="copy-right">Made by CS <a style="color: #7F91A2;" href="...">C4EJS71</a></p>
-			<a class="to-top" href="#header"><span> </span> </a>
-		</div>
-	</div>
+    </div>
+    <div class="subfooter">
+      <div class="wrap">
+        <ul>
+          <li><a href="index.html">Home</a><span>::</span></li>
+          <li><a href="destination.html">Destination</a><span>::</span></li>
+          <li><a href="blog.html">Blog</a><span>::</span></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <div class="clear"></div>
+        </ul>
+        <p style="color: #7f91a2" class="copy-right">
+          Made by CS <a style="color: #7f91a2" href="...">C4EJS71</a>
+        </p>
+        <a class="to-top" href="#header"><span> </span> </a>
+      </div>
+    </div>
     <script src="data.js"></script>
     <script src="ketqua.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

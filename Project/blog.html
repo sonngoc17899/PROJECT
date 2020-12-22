@@ -1,115 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLOG</title>
+    <link href="blog.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BLOG</title>
-	<link href="blog.css" rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="image/logo.png" alt="logo" width="150" height="50" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent "
+          style="margin-right: 115px"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Destination.html">Destination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<body>
-	<div class="container">
-        <div class="content-header">
-            <div class="logo">
-                <a href="home.html"><img src="image/logo.png" alt="logo" width="150px" height="120px"></a>
+    <div class="container mb-4">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+        <div class="col">
+          <div class="card shadow">
+            <div class="bd-placeholder-img card-img-top">
+              <div class="blog-art-pic">
+                <a class="post-pic" href="#">
+				  <img
+				  style="width: 100%; height: 250px"
+                    src="image/image-destination/Hà nội-ho guom.jpg"
+                    title="poast-name"
+                /></a>
+              </div>
             </div>
-            <div class="header-menu">
-                <ul class="navigation">
-                    <li class="active">
-                        <a href="home.html">Home</a>
-                    </li>
-                    <li class="active-1">
-                        <a href="Destination.html">Destination</a></li>
-                    <li class="active-2">
-                        <a href="blog.html">Blog</a>
-                    </li>
-                </ul>
+            <div class="card-body">
+              <h3><a href="#">Du lịch Hà Nội: Cẩm nang từ A đến Z</a></h3>
+              <p>
+                Thành phố Hà Nội là Thủ đô ngàn năm văn hiến với những di tích
+                cổ xưa, cuộc sống yên bình. Nếu đã một lần du lịch Hà Nội, chắc
+                chắn bạn không thể nào quên không khí đặc trưng nơi đây, với Hồ
+                Gươm, Hồ Tây, những quán cafe trầm mặc, những con đường nhỏ và
+                những gánh hàng rong.
+              </p>
+              <a class="btn" href="#">DeTails</a>
             </div>
-		</div>
-	</div>
-	<div class="blog-grids">
-		<div class="wrap">
-			<div class="blog-grids-box">
-				<div class="blog-grid">
-					<div class="blog-poast-head">
-						<div class="blog-art-pic">
-							<a class="post-pic" href="#"> <img src="image/image-destination/Hà nội-ho guom.jpg"
-									title="poast-name" /></a>
-						</div>
-					</div>
-					<div class="blog-info">
-						<h3><a href="#">Du lịch Hà Nội: Cẩm nang từ A đến Z</a></h3>
-						<p>Thành phố Hà Nội là Thủ đô ngàn năm văn hiến với những di tích cổ xưa, cuộc sống yên bình.
-							Nếu đã một lần du lịch Hà Nội, chắc chắn bạn không thể nào quên không khí đặc trưng nơi đây,
-							với Hồ Gươm, Hồ Tây, những quán cafe trầm mặc, những con đường nhỏ và những gánh hàng rong.
-						</p>
-						<a class="btn" href="#">DeTails</a>
-					</div>
-				</div>
-				<div class="blog-grid">
-					<div class="blog-poast-head">
-						<div class="blog-art-pic">
-							<a class="post-pic" href="#"> <img src="image/image-destination/Hạ long.jpg"
-									title="poast-name" /></a>
-						</div>
-					</div>
-					<div class="blog-info">
-						<h3><a href="#">Kinh nghiệm du lịch quảng ninh</a></h3>
-						<p>Bạn có thể đến Quảng Ninh vào bất cứ thời điểm nào trong năm. Tuy nhiên nếu muốn đi biển thì
-							bạn chắc chắn phải đi vào mùa hè rồi. Thường thì mùa du lịch biển sẽ hot nhất vào tầm tháng
-							4 đến tháng 9 vì thời gian này vì khi đó thời tiết rất đẹp, biển trong xanh, gió mát lành.
-						</p>
-						<a class="btn" href="#">DeTails</a>
-					</div>
-				</div>
-				<div class="blog-grid">
-					<div class="blog-poast-head">
-						<div class="blog-art-pic">
-							<a class="post-pic" href="#"> <img src="image/image-destination/bien-nha-trang.jpg"
-									title="poast-name" /></a>
-						</div>
-					</div>
-					<div class="blog-info">
-						<h3><a href="#">Tha Hồ Du Hí Với Bí Kíp Du Lịch Nha Trang Tự Túc</a></h3>
-						<p>Là một trong những thiên đường biển “lừng danh” nhất Việt Nam, Nha Trang luôn là địa điểm
-							được cả du khách trong lẫn ngoài nước nhớ đến mỗi khi bỗng “thèm” biển xanh cát trắng. </p>
-						<a class="btn" href="#">DeTails</a>
-					</div>
-				</div>
-				<div class="blog-grid">
-					<div class="blog-poast-head">
-						<div class="blog-art-pic">
-							<a class="post-pic" href="#"> <img src="image/image-destination/TP-HCM-landmark-81.jpg"
-									title="poast-name" /></a>
-						</div>
-					</div>
-					<div class="blog-info">
-						<h3><a href="#">Danh sách 9 điểm du lịch ở Sài Gòn đi là “KHÔNG THỂ QUÊN” hiện nay</a></h3>
-						<p>Nếu như nhắc về Hà Nội, người ta nghĩ ngay đến một thủ đô nghìn năm văn hiến với vẻ đẹp cổ
-							kính, pha chút mộng mơ và yên bình đến kỳ lạ thì khi nhắc về Sài Gòn, ai cũng háo hức trước
-							sự hoa lệ, sầm uất trên mỗi góc phố. Hãy cùng điểm danh những điểm du lịch ở Sài Gòn không
-							thể bỏ qua nhé!</p>
-						<a class="btn" href="#">DeTails</a>
-					</div>
-				</div>
-				<div class="clear"> </div>
-			</div>
-	</div>
-	</div>
-	<div class="subfooter">
-		<div class="wrap">
-			<ul>
-				<li><a href="home.html">Home</a><span>::</span></li>
-				<li><a href="destination.html">Destinations</a><span>::</span></li>
-				<li><a href="blog.html">Blog</a><span>::</span></li>
-				<li><a href="blog.html">Contact Us</a></li>
-				<div class="clear"> </div>
-			</ul>
-			<p class="copy-right" style="color: gray;">Made by CS C4EJS71</p>
-		</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow">
+            <div class="bd-placeholder-img card-img-top">
+              <div class="blog-art-pic">
+                <a class="post-pic" href="#">
+				  <img
+				  style="width: 100%; height: 250px"
+                    src="image/image-destination/Hạ long.jpg"
+                    title="poast-name"
+                /></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3><a href="#">Kinh nghiệm du lịch Quảng Ninh</a></h3>
+              <p>
+                Bạn có thể đến Quảng Ninh vào bất cứ thời điểm nào trong năm.
+                Tuy nhiên nếu muốn đi biển thì bạn chắc chắn phải đi vào mùa hè
+                rồi. Thường thì mùa du lịch biển sẽ hot nhất vào tầm tháng 4 đến
+                tháng 9 vì thời gian này vì khi đó thời tiết rất đẹp, biển trong
+                xanh, gió mát lành.
+              </p>
+              <a class="btn" href="#">DeTails</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow">
+            <div class="bd-placeholder-img card-img-top">
+              <div class="blog-art-pic">
+                <a class="post-pic" href="#">
+				  <img
+				  style="width: 100%; height: 250px"
+                    src="image/image-destination/bien-nha-trang.jpg"
+                    title="poast-name"
+                /></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>
+                <a href="#">Tha Hồ Du Hí Với Bí Kíp Du Lịch Nha Trang Tự Túc</a>
+              </h3>
+              <p>
+                Là một trong những thiên đường biển “lừng danh” nhất Việt Nam,
+                Nha Trang luôn là địa điểm được cả du khách trong lẫn ngoài nước
+                nhớ đến mỗi khi bỗng “thèm” biển xanh cát trắng.
+                <a class="btn" href="#">DeTails</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow">
+            <div class="bd-placeholder-img card-img-top">
+              <div class="blog-art-pic">
+                <a class="post-pic" href="#">
+				  <img 
+				  style="width: 100%; height: 250px"
+                    src="image/image-destination/TP-HCM-landmark-81.jpg"
+                    title="poast-name"
+                /></a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>
+                <a href="#"
+                  >Danh sách 9 điểm du lịch ở Sài Gòn đi là “KHÔNG THỂ QUÊN”
+                  hiện nay</a
+                >
+              </h3>
+              <p>
+                Nếu như nhắc về Hà Nội, người ta nghĩ ngay đến một thủ đô nghìn
+                năm văn hiến với vẻ đẹp cổ kính, pha chút mộng mơ và yên bình
+                đến kỳ lạ thì khi nhắc về Sài Gòn.
+              <a class="btn" href="#">DeTails</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
 
+    <div class="subfooter">
+      <div class="wrap">
+        <ul>
+          <li><a href="home.html">Home</a><span>::</span></li>
+          <li><a href="destination.html">Destinations</a><span>::</span></li>
+          <li><a href="blog.html">Blog</a><span>::</span></li>
+          <li><a href="blog.html">Contact Us</a></li>
+          <div class="clear"></div>
+        </ul>
+        <p class="copy-right" style="color: gray">Made by CS C4EJS71</p>
+      </div>
+    </div>
+  </body>
 </html>
